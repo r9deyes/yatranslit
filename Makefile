@@ -1,7 +1,7 @@
 build-wasm:
   GOOS=js\
   GOARCH=wasm\
-  go build -o demo/main.wasm demo/wasm_demo.go
+  go build -o docs/main.wasm docs/wasm_demo.go
 
 build-wasm-tiny:
-  tinygo build -o demo/tiny.wasm -target wasm ./demo/wasm_demo.go
+  tinygo build -o docs/tiny.wasm -target wasm ./docs/wasm_demo.go
